@@ -1,0 +1,50 @@
+[versions]
+agp = "8.4.0"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+appcompat = "1.6.1"
+androidx-fragmentKtx = "1.5.7"
+androidx-constraintLayout = "2.1.4"
+
+kotlinx-coroutines-core = "1.7.3"
+kotlinx-serialization = "1.5.1"
+
+kodein = "7.20.2"
+
+ktor = "2.3.2"
+
+divkit = "29.15.0"
+
+glide = "4.16.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-fragmentKtx = { module = "androidx.fragment:fragment-ktx", version.ref = "androidx-fragmentKtx" }
+androidx-constraintLayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "androidx-constraintLayout" }
+
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines-core" }
+kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+
+kodein = { module = "org.kodein.di:kodein-di", version.ref = "kodein" }
+
+ktor-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-json = { module = "io.ktor:ktor-client-json", version.ref = "ktor" }
+ktor-contentNegotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serialization = { module = "io.ktor:ktor-client-serialization", version.ref = "ktor" }
+ktor-serializationKotlinX = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor" }
+ktor-android = { module = "io.ktor:ktor-client-android", version.ref = "ktor" }
+
+divkit-div = { module = "com.yandex.div:div", version.ref = "divkit" }
+divkit-core = { module = "com.yandex.div:div-core", version.ref = "divkit" }
+divkit-json = { module = "com.yandex.div:div-json", version.ref = "divkit" }
+
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinParcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
