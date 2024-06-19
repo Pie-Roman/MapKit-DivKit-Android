@@ -25,21 +25,9 @@ android {
         buildConfigField("String", "MAPKIT_API_KEY", mapkitApiKey)
     }
 
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
-        }
-    }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = "1.8"
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 
@@ -47,7 +35,10 @@ dependencies {
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
-    implementation(libs.androidx.constraintLayout)
+    implementation(libs.androidx.fragmentKtx)
 
     implementation(libs.yandex.mapkit)
+
+    implementation(projects.feature.mapFeature)
+    implementation(projects.feature.divkitMapFeature)
 }

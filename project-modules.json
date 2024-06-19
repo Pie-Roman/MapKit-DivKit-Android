@@ -2,5 +2,13 @@
   {
     "module": ":app",
     "path": "app"
+  },
+  {
+    "module": ":feature:map-feature",
+    "path": "feature/map-feature"
+  },
+  {
+    "module": ":feature:divkit-map-feature",
+    "path": "feature/divkit-map-feature"
   }
 ]
