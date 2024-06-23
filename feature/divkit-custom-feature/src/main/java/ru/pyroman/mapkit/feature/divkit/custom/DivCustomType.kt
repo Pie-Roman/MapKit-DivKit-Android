@@ -1,6 +1,6 @@
 package ru.pyroman.mapkit.feature.divkit.custom
 
-enum class DivCustomType(
+internal enum class DivCustomType(
     val customType: String
 ) {
 

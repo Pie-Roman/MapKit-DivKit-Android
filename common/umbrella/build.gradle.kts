@@ -22,6 +22,8 @@ dependencies {
     api(projects.common.core.platform)
     api(projects.common.core.network)
 
+    api(projects.feature.divkitFeature)
+    api(projects.feature.divkitCustomFeature)
     api(projects.feature.divkitMapFeature)
     api(projects.feature.mapFeature)
 }
