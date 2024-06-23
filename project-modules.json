@@ -34,5 +34,9 @@
   {
     "module": ":feature:divkit-map-feature",
     "path": "feature/divkit-map-feature"
+  },
+  {
+    "module": ":feature:divkit-custom-feature",
+    "path": "feature/divkit-custom-feature"
   }
 ]
