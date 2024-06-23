@@ -39,6 +39,5 @@ dependencies {
 
     implementation(libs.yandex.mapkit)
 
-    implementation(projects.feature.mapFeature)
-    implementation(projects.feature.divkitMapFeature)
+    implementation(projects.common.umbrella)
 }
