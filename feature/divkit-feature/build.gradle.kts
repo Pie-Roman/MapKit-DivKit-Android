@@ -30,6 +30,7 @@ dependencies {
     implementation(libs.divkit.div)
     implementation(libs.divkit.core)
     implementation(libs.divkit.json)
+    implementation(libs.divkit.logging)
 
     implementation(libs.glide)
 

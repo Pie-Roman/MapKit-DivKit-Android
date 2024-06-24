@@ -9,7 +9,7 @@ abstract class AbstractDivCustomViewAdapter<T : View> {
 
     abstract val customType: String
 
-    open fun bindView(view: T, div: DivCustom, divView: Div2View) = Unit
+    open fun bindView(view: T, divCustom: DivCustom, divView: Div2View) = Unit
 
     abstract fun createView(): T
 

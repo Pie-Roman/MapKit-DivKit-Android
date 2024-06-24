@@ -7,33 +7,29 @@ import com.yandex.div.data.DivParsingEnvironment
 import com.yandex.div2.DivData
 import org.json.JSONObject
 
-internal class DivViewFactory(
+class DivViewFactory internal constructor(
     private val contextFactory: DivContextFactory,
     private val environment: DivParsingEnvironment,
 ) {
 
     fun create(
         rawDivData: String,
-    ): List<View> {
+    ): View {
         val context = contextFactory.create()
+        val divData =  parseDivData(rawDivData)
 
-        return parseDivData(rawDivData).map { divData ->
-            Div2View(context).apply {
-                setData(divData, DivDataTag(divData.logId))
-            }
+        return Div2View(context).apply {
+            setData(divData, DivDataTag(divData.logId))
         }
     }
 
-    private fun parseDivData(divDataRaw: String): List<DivData> {
+    private fun parseDivData(divDataRaw: String): DivData {
         val json = JSONObject(divDataRaw)
-        val cards = json.getJSONArray("cards")
+        val card = json.getJSONObject("card")
         val templates = json.optJSONObject("templates")
         if (templates != null) {
             environment.parseTemplates(templates)
         }
-        return (0 until cards.length()).map { index ->
-            val card = cards.getJSONObject(index)
-            DivData(environment, card)
-        }
+        return DivData(environment, card)
     }
 }

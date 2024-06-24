@@ -35,7 +35,6 @@ val divkitModule = module("divkitModule") {
     provider {
         DivConfigurationFactory(
             imageLoaderFactory = instance(),
-            divDownloader = instance(),
             divCustomContainerViewAdapter = instance(),
             divVariableController = instance(),
         )
@@ -49,7 +48,7 @@ val divkitModule = module("divkitModule") {
     }
 
     singleton {
-        DivParsingEnvironment(ParsingErrorLogger.ASSERT)
+        DivParsingEnvironment(ParsingErrorLogger.LOG)
     }
 
     provider<DivViewFactory> {

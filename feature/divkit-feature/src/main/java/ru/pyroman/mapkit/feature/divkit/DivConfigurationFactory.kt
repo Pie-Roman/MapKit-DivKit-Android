@@ -10,7 +10,6 @@ import ru.pyroman.mapkit.feature.divkit.imageloader.DivImageLoaderFactory
 
 internal class DivConfigurationFactory(
     private val imageLoaderFactory: DivImageLoaderFactory,
-    private val divDownloader: DivDownloader,
     private val divCustomContainerViewAdapter: DivCustomContainerViewAdapter,
     private val divVariableController: DivVariableController,
 ) {
@@ -25,7 +24,6 @@ internal class DivConfigurationFactory(
         )
             .actionHandler(actionHandler)
             .divCustomContainerViewAdapter(divCustomContainerViewAdapter)
-            .divDownloader(divDownloader)
             .divVariableController(divVariableController)
 
         return builder.build()
