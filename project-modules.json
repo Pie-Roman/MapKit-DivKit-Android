@@ -24,6 +24,14 @@
     "path": "common/umbrella"
   },
   {
+    "module": ":domain:divkit-domain",
+    "path": "domain/divkit-domain"
+  },
+  {
+    "module": ":data:divkit-data",
+    "path": "data/divkit-data"
+  },
+  {
     "module": ":feature:map-feature",
     "path": "feature/map-feature"
   },

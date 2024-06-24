@@ -22,9 +22,14 @@ android {
 }
 
 dependencies {
+    implementation(projects.common.core)
+
     implementation(projects.feature.mapFeature)
+    implementation(projects.feature.divkitFeature)
+    implementation(projects.domain.divkitDomain)
 
     implementation(libs.androidx.constraintLayout)
+    implementation(libs.androidx.lifecycle.runtimeKtx)
 
     implementation(libs.divkit.div)
     implementation(libs.divkit.core)

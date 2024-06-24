@@ -1,18 +1,15 @@
 plugins {
     alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.kotlinSerialization)
 }
 
 android {
-    namespace = "ru.pyroman.mapkit.feature.divkit"
+    namespace = "ru.pyroman.mapkit.data.divkit"
     compileSdk = 34
 
     defaultConfig {
         minSdk = 24
-    }
-
-    buildFeatures {
-        viewBinding = true
     }
 
     compileOptions {
@@ -20,18 +17,9 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 }
-
 dependencies {
     implementation(projects.common.core)
+    implementation(projects.common.core.network)
 
     implementation(projects.domain.divkitDomain)
-    implementation(projects.data.divkitData)
-
-    implementation(libs.divkit.div)
-    implementation(libs.divkit.core)
-    implementation(libs.divkit.json)
-
-    implementation(libs.glide)
-
-    implementation(libs.androidx.appcompat)
 }

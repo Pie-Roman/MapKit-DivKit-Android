@@ -4,15 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "ru.pyroman.mapkit.feature.divkit.custom"
+    namespace = "ru.pyroman.mapkit.domain.divkit"
     compileSdk = 34
 
     defaultConfig {
         minSdk = 24
-    }
-
-    buildFeatures {
-        viewBinding = true
     }
 
     compileOptions {
@@ -23,12 +19,4 @@ android {
 
 dependencies {
     implementation(projects.common.core)
-
-    implementation(projects.feature.divkitFeature)
-
-    implementation(projects.feature.divkitMapFeature)
-
-    implementation(libs.divkit.div)
-    implementation(libs.divkit.core)
-    implementation(libs.divkit.json)
 }
