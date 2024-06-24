@@ -14,23 +14,26 @@ internal class DivViewFactory(
 
     fun create(
         rawDivData: String,
-    ): View {
-        val divData = parseDivData(rawDivData)
+    ): List<View> {
         val context = contextFactory.create()
 
-        return Div2View(context).apply {
-            setData(divData, DivDataTag(divData.logId))
+        return parseDivData(rawDivData).map { divData ->
+            Div2View(context).apply {
+                setData(divData, DivDataTag(divData.logId))
+            }
         }
     }
 
-    private fun parseDivData(divDataRaw: String): DivData {
+    private fun parseDivData(divDataRaw: String): List<DivData> {
         val json = JSONObject(divDataRaw)
-        val card = json.getJSONObject("card")
+        val cards = json.getJSONArray("cards")
         val templates = json.optJSONObject("templates")
         if (templates != null) {
             environment.parseTemplates(templates)
         }
-
-        return DivData(environment, card)
+        return (0 until cards.length()).map { index ->
+            val card = cards.getJSONObject(index)
+            DivData(environment, card)
+        }
     }
 }
