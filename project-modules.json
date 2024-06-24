@@ -2,5 +2,49 @@
   {
     "module": ":app",
     "path": "app"
+  },
+  {
+    "module": ":common:core",
+    "path": "common/core"
+  },
+  {
+    "module": ":common:core:di",
+    "path": "common/core/di"
+  },
+  {
+    "module": ":common:core:network",
+    "path": "common/core/network"
+  },
+  {
+    "module": ":common:core:platform",
+    "path": "common/core/platform"
+  },
+  {
+    "module": ":common:umbrella",
+    "path": "common/umbrella"
+  },
+  {
+    "module": ":domain:divkit-domain",
+    "path": "domain/divkit-domain"
+  },
+  {
+    "module": ":data:divkit-data",
+    "path": "data/divkit-data"
+  },
+  {
+    "module": ":feature:map-feature",
+    "path": "feature/map-feature"
+  },
+  {
+    "module": ":feature:divkit-feature",
+    "path": "feature/divkit-feature"
+  },
+  {
+    "module": ":feature:divkit-map-feature",
+    "path": "feature/divkit-map-feature"
+  },
+  {
+    "module": ":feature:divkit-custom-feature",
+    "path": "feature/divkit-custom-feature"
   }
 ]
