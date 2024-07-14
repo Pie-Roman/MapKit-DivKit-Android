@@ -1,6 +1,6 @@
 ## MapKit DivKit Android Demo app
 
-![Static Badge](https://img.shields.io/badge/divkit-orange?link=https%3A%2F%2Fgithub.com%2Fdivkit%2Fdivkit) ![Static Badge](https://img.shields.io/badge/mapkit-red?link=https%3A%2F%2Fyandex.ru%2Fmaps-api) ![Static Badge](https://img.shields.io/badge/spring-green)
+![Static Badge](https://img.shields.io/badge/divkit-orange?link=https%3A%2F%2Fgithub.com%2Fdivkit%2Fdivkit) ![Static Badge](https://img.shields.io/badge/mapkit-red?link=https%3A%2F%2Fyandex.ru%2Fmaps-api) ![Static Badge](https://img.shields.io/badge/ktor-gray?link=https%3A%2F%2Fktor.io) ![Static Badge](https://img.shields.io/badge/kodein-purple?link=https%3A%2F%2Fkodein.net%2Foss.html) ![Static Badge](https://img.shields.io/badge/glide-blue?link=https%3A%2F%2Fgithub.com%2Fbumptech%2Fglide)
 
 Demo Android приложение, демонстрирующее интеграцию библиотеки Yandex MapKit в DivKit BDUI
 
