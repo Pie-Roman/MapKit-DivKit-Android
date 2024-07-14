@@ -24,9 +24,9 @@ cd MapKit-DivKit-Android
 **Yandex MapKit:**
 - Получите API key из [Yandex Developer Console](https://developer.tech.yandex.ru/services/)
 - Добавьте API key в файл `local.properties`:
-  ```properties
-  yandex.mapkit.apikey=YOUR_API_KEY_HERE
-  ```
+```properties
+   yandex.mapkit.apikey=YOUR_API_KEY_HERE
+```
 
 #### Сборка и запуск
 
